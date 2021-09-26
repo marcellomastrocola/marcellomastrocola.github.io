@@ -12,53 +12,96 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Marcello Mastrocola</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top vw-100">
         <div class="container-fluid main-bg">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 50px;">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span id="apri-menu" class="navbar-toggler-icon"></span>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
+                                <li class="nav-item green active">
                                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item cyan">
                                     <a class="nav-link" href="chi-sono.html">Chi sono</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item yellow">
                                     <a class="nav-link" href="consulenze.html">Consulenze</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item orange">
                                     <a class="nav-link" href="persone.html">Persone</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item green">
                                     <a class="nav-link" href="contatti.html">Contatti</a>
                                 </li>
                             </ul>
                         </div>
+                    </nav>
                 </div>
             </div>
-            </nav>
+        </div>
+        <div id="menu-mobile" class="bg-green text-center align-items-center justify-content-center">
+            <div id="chiudi-menu">
+                <h4 class="text-white">
+                    <strong>
+                        X
+                    </strong>
+                </h4>
+            </div>
+            <ul class="p-0">
+                <li>
+                    <a href="index.html" class="text-white p-3">
+                        <h3>
+                            Home
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="chi-sono.html" class="text-white p-3">
+                        <h3>
+                            Chi sono
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="consulenze.html" class="text-white p-3">
+                        <h3>
+                            Consulenze
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="persone.html" class="text-white p-3">
+                        <h3>
+                            Persone
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="contatti.html" class="text-white p-3">
+                        <h3>
+                            Contatti
+                        </h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
         <div id="home-hero" class="container-fluid d-flex align-items-center justify-content-center vh-100">
-            <div class="row w-100">
-                <div class="col-12 col-md-6">
+            <div class="row w-100 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-4">
                     <div class="p-4 animate__animated animate__fadeInRight text-white">
                         <h1>
                             Marcello
@@ -68,31 +111,67 @@
                         <p>
                             Naturopatia, benessere, progettazione in permacultura
                         </p>
+                        <a href="chi-sono.html" class="cta-home bg-orange px-3 py-2 animate__animated animate__fadeInLeft delayed-3">
+                            <strong>
+                                Scopri chi sono »
+                            </strong>
+                        </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 text-right">
-                    <a href="chi-sono.html" class="btn btn-success bg-green animate__animated animate__fadeIn">
-                        Vai >
-                    </a>
+                <div class="col-12 col-md-8 text-right animate__animated animate__fadeInUp delayed-1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="citazioni">
+                                "Serenità è quando ciò che dici, ciò che pensi, ciò che fai, sono in perfetta armonia."
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-white">
+                            <cite title="Ghandi">Ghandi</cite>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container-fluid bg-orange py-5">
+        <div class="container-fluid bg-cyan py-5">
             <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-3 mb-2 text-center">
                     <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 100px;">
                 </div>
-                <div class="col-12 col-sm-3">
-                    2
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Marcello Mastrocola
+                        </strong>
+                    </h6>
+                    <p>
+                        Terapeuta in Naturopatia<br>
+                        Operatore in Arteterapia<br>
+                        Progettista in Permacultura
+                    </p>
                 </div>
-                <div class="col-12 col-sm-3">
-                    3
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Progetto finale per Web Design - Prof. Tufano
+                        </strong>
+                    </h6>
+                    Corso di editoria, illustrazione e fumetto
+                    <br>
+                    Accademia di Belle Arti di Napoli
                 </div>
-                <div class="col-12 col-sm-3">
-                    4
+                <div class="col-12 col-sm-3 mb-2">
+                    Via Capodimonte, 19, Napoli NA
+                    <br>
+                    <a href="tel:+393338173467" class="text-black">
+                        +393338173467
+                    </a>
+                    <br>
+                    <a href="mailto:ebro330@gmail.com" class="text-black">
+                        ebro330@gmail.com
+                    </a>
                 </div>
             </div>
         </div>
@@ -101,6 +180,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

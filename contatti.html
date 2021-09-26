@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contatti - Marcello Mastrocola</title>
+</head>
+
+<body>
+    <header class="fixed-top vw-100">
+        <div class="container-fluid main-bg">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 35px;">
+                        </a>
+                        <span id="apri-menu" class="navbar-toggler-icon"></span>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item green">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item cyan">
+                                    <a class="nav-link" href="chi-sono.html">Chi sono</a>
+                                </li>
+                                <li class="nav-item yellow">
+                                    <a class="nav-link" href="consulenze.html">Consulenze</a>
+                                </li>
+                                <li class="nav-item orange">
+                                    <a class="nav-link" href="persone.html">Persone</a>
+                                </li>
+                                <li class="nav-item green active">
+                                    <a class="nav-link active" aria-current="page" href="contatti.html">Contatti</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="menu-mobile" class="bg-green text-center align-items-center justify-content-center">
+            <div id="chiudi-menu">
+                <h4 class="text-white">
+                    <strong>
+                        X
+                    </strong>
+                </h4>
+            </div>
+            <ul class="p-0">
+                <li>
+                    <a href="index.html" class="text-white p-3">
+                        <h3>
+                            Home
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="chi-sono.html" class="text-white p-3">
+                        <h3>
+                            Chi sono
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="consulenze.html" class="text-white p-3">
+                        <h3>
+                            Consulenze
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="persone.html" class="text-white p-3">
+                        <h3>
+                            Persone
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="contatti.html" class="text-white p-3">
+                        <h3>
+                            Contatti
+                        </h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid d-flex align-items-center flex-column">
+            <div class="row w-100">
+                <div class="col-12 text-center animate__animated animate__fadeIn">
+                    <h1>
+                        Contatti
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 offset-md-3 mb-5 text-center animate__animated animate__fadeIn delayed-1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="citazioni">
+                                "Non bisogna opporreresistenza né fuggire dal problema ma entrare in esso, fare parte di
+                                esso, usarlo come elemento di liberazione."
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Jodorowsky">Jodorowsky</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 text-center" id="invia-messaggio">
+                    <div class="mb-2">
+                        <label for="nome" class="form-label text-green">Il tuo nome</label>
+                        <input type="text" class="form-control" id="nome"
+                            placeholder="Mario Rossi">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label text-cyan">La tua email</label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="nome@esempio.it">
+                    </div>
+                    <div class="mb-2">
+                        <label for="messaggio" class="form-label text-orange">Cosa vuoi dirmi?</label>
+                        <textarea class="form-control" id="messaggio" rows="3" placeholder="Scrivi il tuo messaggio..."></textarea>
+                    </div>
+                    <div class="mb-2 text-end">
+                        <button type="submit" class="btn" id="bottone-invia">
+                            <strong>
+                                Invia
+                            </strong>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 offset-md-3 text-center risposta-messaggio">
+                    <h3 class="text-orange">
+                        Grazie per il tuo messaggio!
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-cyan py-5">
+            <div class="row">
+                <div class="col-12 col-sm-3 mb-2 text-center">
+                    <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 100px;">
+                </div>
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Marcello Mastrocola
+                        </strong>
+                    </h6>
+                    <p>
+                        Terapeuta in Naturopatia<br>
+                        Operatore in Arteterapia<br>
+                        Progettista in Permacultura
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Progetto finale per Web Design - Prof. Tufano
+                        </strong>
+                    </h6>
+                    Corso di editoria, illustrazione e fumetto
+                    <br>
+                    Accademia di Belle Arti di Napoli
+                </div>
+                <div class="col-12 col-sm-3 mb-2">
+                    Via Capodimonte, 19, Napoli NA
+                    <br>
+                    <a href="tel:+393338173467" class="text-black">
+                        +393338173467
+                    </a>
+                    <br>
+                    <a href="mailto:ebro330@gmail.com" class="text-black">
+                        ebro330@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

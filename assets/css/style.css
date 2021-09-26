@@ -1,4 +1,82 @@
+html, body{
+    background-color: #f5f5f5;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header nav.navbar{
+    padding: 0;
+}
+header .nav-item{
+    -webkit-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+    padding: 10px 0;
+}
+header .nav-item.green.active,
+header .nav-item.green:hover{
+    -webkit-box-shadow: inset 0px -2px 0px 0px #88c87b; 
+    box-shadow: inset 0px -2px 0px 0px #88c87b;
+}
+header .nav-item.cyan.active,
+header .nav-item.cyan:hover{
+    -webkit-box-shadow: inset 0px -2px 0px 0px #80c3d2; 
+    box-shadow: inset 0px -2px 0px 0px #80c3d2;
+}
+header .nav-item.yellow.active,
+header .nav-item.yellow:hover{
+    -webkit-box-shadow: inset 0px -2px 0px 0px #ffd600; 
+    box-shadow: inset 0px -2px 0px 0px #ffd600;
+}
+header .nav-item.orange.active,
+header .nav-item.orange:hover{
+    -webkit-box-shadow: inset 0px -2px 0px 0px #ff8454; 
+    box-shadow: inset 0px -2px 0px 0px #ff8454;
+}
+main{
+    padding-top: 85px;
+    min-height: 90vh;
+}
+footer{
+    margin-top: 25px;
+}
+#menu-mobile{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#menu-mobile ul{
+    list-style: none;
+}
+#apri-menu{
+    margin-right: 15px;
+}
+@media screen and (min-width: 753px) {
+    #apri-menu{
+        display: none;
+    }
+}
+#chiudi-menu{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 #home-hero{
+    margin-top: -85px;
+    background: 
+    -o-linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ), url('../img/home-hero.jpg');
+    background: 
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(0, 0, 0, 0.3)), 
+      to(rgba(0, 0, 0, 0.3))
+    ), url('../img/home-hero.jpg');
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.3), 
@@ -8,17 +86,23 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-body{
-    background-color: #f5f5f5;
+.cta-home{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
 }
 .main-bg{
     background-color: #ffffffaa;
 }
 h1{
-    font-family: 'Montserrat';
-    font-size: 4rem;
+    font-size: 3.75rem;
 }
-h2{
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 2.5rem;
+    }
+}
+h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat';
 }
 .bg-green{
@@ -45,6 +129,49 @@ h2{
 .text-orange{
     color: #ff8454;
 }
-
-/* TEXT WHITE -> 50 gray */
-/* TEXT BLACK -> 800 gray */
+.bio{
+    font-size: 1.5rem;
+}
+.citazioni{
+    font-size: 2rem;
+    font-style: italic;
+    color: #BDBDBD;
+}
+@media screen and (max-width: 700px) {
+    .citazioni{
+        font-size: 1.2rem;
+    }
+}
+.delayed-05{
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+.delayed-1{
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+.delayed-15{
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+}
+.delayed-2{
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+.delayed-25{
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+}
+.delayed-3{
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+}
+#bottone-invia{
+    background-color: #E0E0E0;
+}
+.risposta-messaggio{
+    display: none;
+}
+.nascondi-form{
+    display: none;
+}

@@ -8,87 +8,291 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Marcello Mastrocola</title>
+    <title>Chi sono - Marcello Mastrocola</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top vw-100">
         <div class="container-fluid main-bg">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 35px;">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span id="apri-menu" class="navbar-toggler-icon"></span>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <li class="nav-item green">
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="chi-sono.html">Chi sono</a>
+                                <li class="nav-item cyan active">
+                                    <a class="nav-link active" aria-current="page" href="chi-sono.html">Chi sono</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item yellow">
                                     <a class="nav-link" href="consulenze.html">Consulenze</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item orange">
                                     <a class="nav-link" href="persone.html">Persone</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item green">
                                     <a class="nav-link" href="contatti.html">Contatti</a>
                                 </li>
                             </ul>
                         </div>
+                    </nav>
                 </div>
             </div>
-            </nav>
+        </div>
+        <div id="menu-mobile" class="bg-green text-center align-items-center justify-content-center">
+            <div id="chiudi-menu">
+                <h4 class="text-white">
+                    <strong>
+                        X
+                    </strong>
+                </h4>
+            </div>
+            <ul class="p-0">
+                <li>
+                    <a href="index.html" class="text-white p-3">
+                        <h3>
+                            Home
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="chi-sono.html" class="text-white p-3">
+                        <h3>
+                            Chi sono
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="consulenze.html" class="text-white p-3">
+                        <h3>
+                            Consulenze
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="persone.html" class="text-white p-3">
+                        <h3>
+                            Persone
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="contatti.html" class="text-white p-3">
+                        <h3>
+                            Contatti
+                        </h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
-        <div class="container-fluid d-flex align-items-center justify-content-center flex-column min-vh-100">
-            <div class="row w-100 pt-5 pt-md-0 mt-5 mt-md-0">
-                <div class="col-12 text-center mb-5">
+        <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
+            <div class="row w-100">
+                <div class="col-12 text-center animate__animated animate__fadeIn">
                     <h1>
                         Chi sono
                     </h1>
                 </div>
-                <div class="col-12 col-md-6 mt-5">
-                    <h2 class="mb-3 bg-green pt-3 pe-2 ps-2 text-white">Formazione</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus efficitur accumsan. Integer risus risus, facilisis quis semper eget, congue fringilla erat. Suspendisse potenti. Donec efficitur diam ornare leo tristique venenatis. Suspendisse ullamcorper pellentesque porttitor. Mauris euismod lobortis tellus, vel congue turpis. Vivamus ut tempor ipsum, vel porttitor enim. Phasellus finibus facilisis eros nec dictum.
+                <div class="col-12 col-md-8 offset-md-2 mb-3 text-center animate__animated animate__fadeIn delayed-05">
+                    <p class="bio">
+                        Sin da piccolo appassionato di processi, di come le cose funzionino. Da grande ho seguito questa
+                        ispirazione ed ho approfondito le conoscenze attraverso studi in istituti di primo livello con
+                        persone che mi hanno cambiato la vita.
+                        Ho imparato che ciò che sei è prezioso e deve essere parte della tua vita.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6 pt-5 mt-5 text-end">
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 mb-5 text-center animate__animated animate__fadeIn delayed-1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="citazioni">
+                                "Se credo di poterlo fare, acquisirò certamente la capacità di farlo"
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Ghandi">Ghandi</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 mt-5 animate__animated animate__fadeInLeft delayed-15">
+                    <h2 class="mb-3 bg-green pt-3 pe-2 ps-2 text-white">Formazione</h2>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Formazione specialistica in Marketing e comunicazione
+                                </td>
+                                <td>
+                                    <strong>
+                                        Università Siena, Ancona, Leeds, Napoli
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Diploma professionale in progettazione in Permacultura
+                                </td>
+                                <td>
+                                    <strong>
+                                        Accademia di Permacultura
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Diploma professionale in Naturopatia
+                                </td>
+                                <td>
+                                    <strong>
+                                        Scuola Italiana di Naturopatia
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Diploma professionale in Arteterapia
+                                </td>
+                                <td>
+                                    <strong>
+                                        Istituto di formazione Artiterapeutiche di Napoli
+                                    </strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-md-6 pt-5 mt-5 text-end animate__animated animate__fadeInRight delayed-2">
                     <h2 class="mb-3 bg-cyan pt-3 ps-2 pe-2 text-white">Curriculum</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus efficitur accumsan. Integer risus risus, facilisis quis semper eget, congue fringilla erat. Suspendisse potenti. Donec efficitur diam ornare leo tristique venenatis. Suspendisse ullamcorper pellentesque porttitor. Mauris euismod lobortis tellus, vel congue turpis. Vivamus ut tempor ipsum, vel porttitor enim. Phasellus finibus facilisis eros nec dictum.
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col" style="font-weight: normal;">
+                                    <i>
+                                        presso
+                                    </i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Consulente esterno in Marketing e comunicazione
+                                </td>
+                                <td class="text-center">
+                                    <strong>
+                                        4 anni
+                                    </strong>
+                                </td>
+                                <td>
+                                    mPMI
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Progettista in Permacultura
+                                </td>
+                                <td class="text-center">
+                                    <strong>
+                                        2 anni
+                                    </strong>
+                                </td>
+                                <td>
+                                    privati e aziende agricole
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Arteterapeuta
+                                </td>
+                                <td class="text-center">
+                                    <strong>
+                                        2 anni
+                                    </strong>
+                                </td>
+                                <td>
+                                    istituti e aziende
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Naturopata
+                                </td>
+                                <td class="text-center">
+                                    <strong>
+                                        2 anni
+                                    </strong>
+                                </td>
+                                <td>
+                                    privati
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 text-center">
+                    <a href="#" id="torna-su" class="text-orange">
+                        Torna su
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container-fluid bg-orange py-5">
+        <div class="container-fluid bg-cyan py-5">
             <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-3 mb-2 text-center">
                     <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 100px;">
                 </div>
-                <div class="col-12 col-sm-3">
-                    2
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Marcello Mastrocola
+                        </strong>
+                    </h6>
+                    <p>
+                        Terapeuta in Naturopatia<br>
+                        Operatore in Arteterapia<br>
+                        Progettista in Permacultura
+                    </p>
                 </div>
-                <div class="col-12 col-sm-3">
-                    3
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Progetto finale per Web Design - Prof. Tufano
+                        </strong>
+                    </h6>
+                    Corso di editoria, illustrazione e fumetto
+                    <br>
+                    Accademia di Belle Arti di Napoli
                 </div>
-                <div class="col-12 col-sm-3">
-                    4
+                <div class="col-12 col-sm-3 mb-2">
+                    Via Capodimonte, 19, Napoli NA
+                    <br>
+                    <a href="tel:+393338173467" class="text-black">
+                        +393338173467
+                    </a>
+                    <br>
+                    <a href="mailto:ebro330@gmail.com" class="text-black">
+                        ebro330@gmail.com
+                    </a>
                 </div>
             </div>
         </div>
@@ -97,6 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

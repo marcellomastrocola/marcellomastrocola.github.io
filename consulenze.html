@@ -12,157 +12,255 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Marcello Mastrocola</title>
+    <title>Consulenze - Marcello Mastrocola</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top vw-100">
         <div class="container-fluid main-bg">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 35px;">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span id="apri-menu" class="navbar-toggler-icon"></span>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <li class="nav-item green">
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item cyan">
                                     <a class="nav-link" href="chi-sono.html">Chi sono</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="consulenze.html">Consulenze</a>
+                                <li class="nav-item yellow active">
+                                    <a class="nav-link active" aria-current="page" href="consulenze.html">Consulenze</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item orange">
                                     <a class="nav-link" href="persone.html">Persone</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item green">
                                     <a class="nav-link" href="contatti.html">Contatti</a>
                                 </li>
                             </ul>
                         </div>
+                    </nav>
                 </div>
             </div>
-            </nav>
+        </div>
+        <div id="menu-mobile" class="bg-green text-center align-items-center justify-content-center">
+            <div id="chiudi-menu">
+                <h4 class="text-white">
+                    <strong>
+                        X
+                    </strong>
+                </h4>
+            </div>
+            <ul class="p-0">
+                <li>
+                    <a href="index.html" class="text-white p-3">
+                        <h3>
+                            Home
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="chi-sono.html" class="text-white p-3">
+                        <h3>
+                            Chi sono
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="consulenze.html" class="text-white p-3">
+                        <h3>
+                            Consulenze
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="persone.html" class="text-white p-3">
+                        <h3>
+                            Persone
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="contatti.html" class="text-white p-3">
+                        <h3>
+                            Contatti
+                        </h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
-        <div class="container-fluid d-flex align-items-center justify-content-center flex-column min-vh-100">
-            <div class="row w-100 pt-5 pt-md-0 mt-5 mt-md-0">
-                <div class="col-12 text-center mb-5">
+        <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
+            <div class="row w-100">
+                <div class="col-12 text-center animate__animated animate__fadeIn">
                     <h1>
                         Consulenze
                     </h1>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 offset-md-3 mb-5 text-center animate__animated animate__fadeIn delayed-1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="citazioni">
+                                "La libertà dell'uomo è definitiva ed immediata se così egli vuole; essa non dipende da vittorie esterne ma interne."
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Yogananda">Yogananda</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-8 mb-5 animate__animated animate__fadeInLeft delayed-15">
                     <h2 class="mb-3 bg-green pt-3 pe-2 ps-2">
                         Naturopatia
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet
+                        Regole fondamentali in naturopatia sono: rispettare le leggi naturali che regolano il corpo umano; attenzione alla singola persona e non solo alla sua malattia; il riequilibrio energetico; l'alimentazione equilibrata e naturale; la disintossicazione dell’organismo dalle tossine fisiche ed emotive; promuovere l'auto-guarigione dell'organismo stimolando la forza vitale naturale;
+                        <br><br>
+                        Le mie consulenze vengono effettuate al vostro domicilio o presso il mio studio.
                     </p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="progetti ps-5">
+                <div class="col-12 col-md-4 animate__animated animate__fadeInRight delayed-15">
+                    <div class="progetti ps-md-5">
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/naturopatia-1.jpg" class="img-fluid" alt="Naturopatia 1">
                             </div>
                         </div>
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/naturopatia-2.jpg" class="img-fluid" alt="Naturopatia 2">
                             </div>
                         </div>
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-5">
-                    <div class="progetti pe-5">
-                        <div>
-                            <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/naturopatia-3.jpg" class="img-fluid" alt="Naturopatia 3">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 text-end my-5">
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-4 mt-5 order-2 order-md-1 animate__animated animate__fadeInLeft delayed-2">
+                    <div class="progetti pe-md-5">
+                        <div>
+                            <div class="w-100 text-center">
+                                <img src="assets/img/permacultura-1.jpg" class="img-fluid" alt="Permacultura 1">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-100 text-center">
+                                <img src="assets/img/permacultura-2.jpg" class="img-fluid" alt="Permacultura 2">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-100 text-center">
+                                <img src="assets/img/permacultura-3.jpg" class="img-fluid" alt="Permacultura 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 text-end my-5 order-1 order-md-2 animate__animated animate__fadeInRight delayed-2">
                     <h2 class="mb-3 bg-cyan pt-3 pe-2 ps-2">
                         Permacultura
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet
+                        La progettazione in Permacultura ha come scopo principale quello di creare delle società rispettose della natura e delle persone. La permacultura, infatti, può essere applicata a tutti gli ambiti dell'attività umana, in particolare all'ambiente, all'energia e ai nostri rapporti con gli elementi che compongono il sistema naturale e, di conseguenza, al nostro metodo di coltivare la terra per produrre il cibo, attività che è alla base di ogni società umana sostenibile.
+                        <br><br>
+                        Le mie consulenze vengono effettuate presso la vostra attività o domicilio o presso il mio studio.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 my-5">
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-8 my-5 animate__animated animate__fadeInLeft delayed-25">
                     <h2 class="mb-3 bg-yellow pt-3 pe-2 ps-2">
-                        Performance
+                        Arteterapia
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet
+                        L’Arteterapia consiste nella ricerca del benessere psicofisico attraverso l’espressione artistica dei pensieri, vissuti ed emozioni. Essa utilizza le potenzialità, che possiede ogni persona, di elaborare creativamente tutte quelle sensazioni che non si riescono a far emergere con le parole e nei contesti quotidiani. Per mezzo dell’azione creativa l’immagine interna diventa immagine esterna, visibile e condivisibile e comunica all’altro il proprio mondo interiore emotivo e cognitivo
+                        <br><br>
+                        Le mie consulenze vengono effettuate presso la vostra scuola, istituzione o domicilio o presso il mio studio.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 mt-5">
-                    <div class="progetti ps-5">
+                <div class="col-12 col-md-4 mt-5 animate__animated animate__fadeInRight delayed-25">
+                    <div class="progetti ps-md-5">
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/arteterapia-1.jpg" class="img-fluid" alt="Arteterapia 1">
                             </div>
                         </div>
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/arteterapia-2.jpg" class="img-fluid" alt="Arteterapia 2">
                             </div>
                         </div>
                         <div>
                             <div class="w-100 text-center">
-                                <img src="assets/img/home-hero.jpg" class="img-fluid" alt="Progetto " srcset="">
+                                <img src="assets/img/arteterapia-3.jpg" class="img-fluid" alt="Arteterapia 3">
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 text-center">
+                    <a href="#" id="torna-su" class="text-orange">
+                        Torna su
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container-fluid bg-orange py-5">
+        <div class="container-fluid bg-cyan py-5">
             <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-3 mb-2 text-center">
                     <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 100px;">
                 </div>
-                <div class="col-12 col-sm-3">
-                    2
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Marcello Mastrocola
+                        </strong>
+                    </h6>
+                    <p>
+                        Terapeuta in Naturopatia<br>
+                        Operatore in Arteterapia<br>
+                        Progettista in Permacultura
+                    </p>
                 </div>
-                <div class="col-12 col-sm-3">
-                    3
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Progetto finale per Web Design - Prof. Tufano
+                        </strong>
+                    </h6>
+                    Corso di editoria, illustrazione e fumetto
+                    <br>
+                    Accademia di Belle Arti di Napoli
                 </div>
-                <div class="col-12 col-sm-3">
-                    4
+                <div class="col-12 col-sm-3 mb-2">
+                    Via Capodimonte, 19, Napoli NA
+                    <br>
+                    <a href="tel:+393338173467" class="text-black">
+                        +393338173467
+                    </a>
+                    <br>
+                    <a href="mailto:ebro330@gmail.com" class="text-black">
+                        ebro330@gmail.com
+                    </a>
                 </div>
             </div>
         </div>

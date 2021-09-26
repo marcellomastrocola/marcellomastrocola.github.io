@@ -9,256 +9,371 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Marcello Mastrocola</title>
+    <title>Persone - Marcello Mastrocola</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top vw-100">
         <div class="container-fluid main-bg">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 35px;">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span id="apri-menu" class="navbar-toggler-icon"></span>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <li class="nav-item green">
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item cyan">
                                     <a class="nav-link" href="chi-sono.html">Chi sono</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item yellow">
                                     <a class="nav-link" href="consulenze.html">Consulenze</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="persone.html">Persone</a>
+                                <li class="nav-item orange active">
+                                    <a class="nav-link active" aria-current="page" href="persone.html">Persone</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item green">
                                     <a class="nav-link" href="contatti.html">Contatti</a>
                                 </li>
                             </ul>
                         </div>
+                    </nav>
                 </div>
             </div>
-            </nav>
+        </div>
+        <div id="menu-mobile" class="bg-green text-center align-items-center justify-content-center">
+            <div id="chiudi-menu">
+                <h4 class="text-white">
+                    <strong>
+                        X
+                    </strong>
+                </h4>
+            </div>
+            <ul class="p-0">
+                <li>
+                    <a href="index.html" class="text-white p-3">
+                        <h3>
+                            Home
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="chi-sono.html" class="text-white p-3">
+                        <h3>
+                            Chi sono
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="consulenze.html" class="text-white p-3">
+                        <h3>
+                            Consulenze
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="persone.html" class="text-white p-3">
+                        <h3>
+                            Persone
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="contatti.html" class="text-white p-3">
+                        <h3>
+                            Contatti
+                        </h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
+
     <main>
-        <div class="container-fluid d-flex align-items-center justify-content-center flex-column min-vh-100">
-            <div class="row w-100 pt-5 pt-md-0 mt-5 mt-md-0">
-                <div class="col-12 text-center mb-5">
+        <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
+            <div class="row w-100">
+                <div class="col-12 text-center mb-5 animate__animated animate__fadeIn">
                     <h1>
                         Persone
                     </h1>
                 </div>
-                <div class="col-12 col-md-6 offset-md-3">
+            </div>
+            <div class="row w-100">
+                <div class="col-12 animate__animated animate__fadeIn delayed-05">
                     <h2 class="mb-3 pt-3 pe-2 ps-2 text-center">
                         Persone che ho <span class="text-green">seguito</span>
                     </h2>
                 </div>
-                <div class="col-12"></div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInLeft delayed-1">
                     <div class="card shadow">
                         <div class="row">
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 ps-md-5 py-3 order-2 order-md-1">
+                                <img src="assets/img/vincenzo-esposito.jpg" alt="Vincenzo Esposito" class="shadow img-fluid">
                             </div>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 order-1 order-md-2">
                                 <div class="card-body">
-                                    <h3 class="card-title">
+                                    <h3 class="card-title bg-green pt-3 pe-2 ps-2">
                                         <strong>
-                                            John Doe
+                                            Vincenzo Esposito
                                         </strong>
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet
+                                        <i>
+                                            "Intelligenza naturale e accademica mista ad una sensibilità ai problemi degli altri. Marcello ha vero dono nel comunicare in modo accessibile a tutti."
+                                        </i>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInRight delayed-1">
                     <div class="card shadow">
                         <div class="row">
                             <div class="col-12 col-md-8">
                                 <div class="card-body text-end">
-                                    <h3 class="card-title">
+                                    <h3 class="card-title bg-cyan pt-3 pe-2 ps-2">
                                         <strong>
-                                            John Doe
+                                            Giovanni Capra
                                         </strong>
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet
+                                        <i>
+                                            "Marcello ha una attitudine naturale a entrare in empatia con il pubblico. E’ ironico, umile e sempre attento alle esigenze dell’organizzatore e del pubblico cui si rivolge. Si è mostrato molto reattivo ai suggerimenti che gli abbiamo fornito e ha curato ogni più piccolo dettaglio della sua esibizione in maniera rapida e professionale."
+                                        </i>
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 pe-md-5 py-3">
+                                <img src="assets/img/giovanni-capra.jpg" alt="Giovanni Capra" class="shadow img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInLeft delayed-15">
                     <div class="card shadow">
                         <div class="row">
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 ps-md-5 py-3 order-2 order-md-1">
+                                <img src="assets/img/vittorio-primo.jpg" alt="Vittorio Primo" class="shadow img-fluid">
                             </div>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 order-1 order-md-2">
                                 <div class="card-body">
-                                    <h3 class="card-title">
+                                    <h3 class="card-title bg-cyan pt-3 pe-2 ps-2">
                                         <strong>
-                                            John Doe
+                                            Vittorio Primo
                                         </strong>
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet
+                                        <i>
+                                            "Marcello esula dallo stereotipo del classico consulente. Gradevole all’ascolto, semplificatore di concetti difficili. Innovatore nel comunicare tramite tutti i social media al fine di rendere fruibile una materia che aiuta per certo a vivere meglio."
+                                        </i>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInRight delayed-15">
                     <div class="card shadow">
                         <div class="row">
                             <div class="col-12 col-md-8">
                                 <div class="card-body text-end">
-                                    <h3 class="card-title">
+                                    <h3 class="card-title bg-yellow pt-3 pe-2 ps-2">
                                         <strong>
-                                            John Doe
+                                            Erica Valenti
                                         </strong>
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet
+                                        <i>
+                                            "Grazie al suo intervento i partecipanti all’evento hanno acquisito una modalità per credere in se stessi e stare bene, che è il primo passo per riuscire a lavorare in modo sano in un gruppo. Questo per noi è un obiettivo fondamentale per riuscire ad agire nel nostro territorio con efficacia e attraverso il volontariato ambire a diventare persone di valore anziché di successo."
+                                        </i>
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 pe-md-5 py-3">
+                                <img src="assets/img/erica-valenti.jpg" alt="Erica Valenti" class="shadow img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 offset-md-3">
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 animate__animated animate__fadeIn delayed-2">
                     <h2 class="mb-3 pt-3 pe-2 ps-2 text-center">
                         Persone che mi hanno <span class="text-cyan">ispirato</span>
                     </h2>
                 </div>
-                <div class="col-12"></div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInLeft delayed-25">
                     <div class="card shadow">
-                        <div class="row">
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 col-md-4 px-4 px-md-0 ps-md-5 py-3 order-2 order-md-1">
+                                <a href="https://it.wikipedia.org/wiki/Mahatma_Gandhi" target="_blank">
+                                    <img src="assets/img/ghandi.jpg" alt="Mohāndās Karamchand Gāndhī" class="shadow img-fluid">
+                                </a>
                             </div>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 order-1 order-md-2">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         <strong>
-                                            John Doe
+                                            Mohāndās Karamchand Gāndhī
                                         </strong>
                                     </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet
-                                    </p>
+                                    <h6>
+                                        <i>
+                                            - Avvocato, Politico, Essere umano
+                                        </i>
+                                    </h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInRight delayed-25">
                     <div class="card shadow">
-                        <div class="row">
+                        <div class="row d-flex align-items-center">
                             <div class="col-12 col-md-8">
                                 <div class="card-body text-end">
                                     <h3 class="card-title">
                                         <strong>
-                                            John Doe
+                                            Paramahansa Yogananda
                                         </strong>
                                     </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet
-                                    </p>
+                                    <h6>
+                                        <i>
+                                            - Filosofo, Mistico, Essere umano
+                                        </i>
+                                    </h6>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 pe-md-5 py-3">
+                                <a href="https://it.wikipedia.org/wiki/Paramahansa_Yogananda" target="_blank">
+                                    <img src="assets/img/yogananda.jpg" alt="Paramahansa Yogananda" class="shadow img-fluid">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInLeft delayed-3">
                     <div class="card shadow">
-                        <div class="row">
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 col-md-4 px-4 px-md-0 ps-md-5 py-3 order-2 order-md-1">
+                                <a href="https://it.wikipedia.org/wiki/Alejandro_Jodorowsky" target="_blank">
+                                    <img src="assets/img/jodorowsky.jpg" alt="Alejandro Jodorowsky" class="shadow img-fluid">
+                                </a>
                             </div>
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-8 order-1 order-md-2">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         <strong>
-                                            John Doe
+                                            Alejandro Jodorowsky
                                         </strong>
                                     </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet
-                                    </p>
+                                    <h6>
+                                        <i>
+                                            - Drammaturgo, Terapeuta, Essere umano
+                                        </i>
+                                    </h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-5">
+                <div class="col-12 col-md-6 mb-5 animate__animated animate__fadeInRight delayed-3">
                     <div class="card shadow">
-                        <div class="row">
+                        <div class="row d-flex align-items-center">
                             <div class="col-12 col-md-8">
                                 <div class="card-body text-end">
                                     <h3 class="card-title">
                                         <strong>
-                                            John Doe
+                                            Werner Heisenberg
                                         </strong>
                                     </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet
-                                    </p>
+                                    <h6>
+                                        <i>
+                                            - Principale artefice della fisica quantistica, Essere umano
+                                        </i>
+                                    </h6>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 p-4">
-                                <img src="assets/img/home-hero.jpg" alt="" class="shadow img-fluid">
+                            <div class="col-12 col-md-4 px-4 px-md-0 pe-md-5 py-3">
+                                <a href="https://it.wikipedia.org/wiki/Werner_Karl_Heisenberg" target="_blank">
+                                    <img src="assets/img/heisenberg.jpg" alt="Werner Heisenberg" class="shadow img-fluid">
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-8 offset-md-2 text-center animate__animated animate__fadeIn delayed-1">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="citazioni">
+                                "La malattia è un conflitto tra la personalità e l’anima. Molte volte, il raffreddore “cola” quando il corpo non piange. Il dolore di gola “tampona” quando non è possibilecomunicare le afflizioni. Lo stomaco “arde” quando le rabbie non riescono ad uscire. Il diabete “invade” quando la solitudine duole. Il corpo “ingrassa” quando l’insoddisfazione stringe. Il mal di testa “deprime” quando i dubbi aumentano. Il cuore “allenta” quando il senso della vita sembra finire. Il petto “stringe” quando l’orgoglio schiavizza. La pressione “sale” quando la paura imprigiona. La nevrosi “paralizza” quando il bambino interno tiranneggia. La febbre “scalda” quando le difese sfruttano le frontiere dell’immunità. Le ginocchia “dolgono” quando il tuo orgoglio non si piega. Il cancro “ammazza” quando ti stanchi di vivere. La malattia non è cattiva, ti avvisa che stai sbagliando cammino."
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="A. Jodorowsky">A. Jodorowsky</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 col-md-6 offset-md-3 text-center">
+                    <a href="#" id="torna-su" class="text-orange">
+                        Torna su
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container-fluid bg-orange py-5">
+        <div class="container-fluid bg-cyan py-5">
             <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-3 mb-2 text-center">
                     <img src="assets/img/logo.jpg" alt="Marcello Mastrocola" style="height: 100px;">
                 </div>
-                <div class="col-12 col-sm-3">
-                    2
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Marcello Mastrocola
+                        </strong>
+                    </h6>
+                    <p>
+                        Terapeuta in Naturopatia<br>
+                        Operatore in Arteterapia<br>
+                        Progettista in Permacultura
+                    </p>
                 </div>
-                <div class="col-12 col-sm-3">
-                    3
+                <div class="col-12 col-sm-3 mb-2">
+                    <h6>
+                        <strong>
+                            Progetto finale per Web Design - Prof. Tufano
+                        </strong>
+                    </h6>
+                    Corso di editoria, illustrazione e fumetto
+                    <br>
+                    Accademia di Belle Arti di Napoli
                 </div>
-                <div class="col-12 col-sm-3">
-                    4
+                <div class="col-12 col-sm-3 mb-2">
+                    Via Capodimonte, 19, Napoli NA
+                    <br>
+                    <a href="tel:+393338173467" class="text-black">
+                        +393338173467
+                    </a>
+                    <br>
+                    <a href="mailto:ebro330@gmail.com" class="text-black">
+                        ebro330@gmail.com
+                    </a>
                 </div>
             </div>
         </div>
@@ -268,7 +383,6 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/slick.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
